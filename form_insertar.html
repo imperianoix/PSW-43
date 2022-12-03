@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Tienda Electronics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+  
+    body {
+
+background-image: url("imagenes/Ingresar.PNG");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+header{
+  text-align-last:center; 
+  background-color: black;
+  padding: 20px;
+  color:#fff;
+}
+
+h3 {
+  text-align:left;
+  font-weight: 500;
+  padding: 40px;
+}
+
+form {
+  background: radial-gradient(circle at 50% -20.71%, #ff97bd 0, #ff8ec2 10%, #ff85c7 20%, #fb7ccd 30%, #eb74d3 40%, #d86cd8 50%, #c166de 60%, #a663e4 70%, #8662e9 80%, #5c63ef 90%, #0065f3 100%);
+  padding: 40px;
+  border: radius 10px;
+  width: 35%;
+}
+
+.btn-info {
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer; 
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Tienda Electronics</h2>
+  </header>
+<div class="container">
+  <h3>Ingreso de productos</h3>
+  <form action="php/insertar.php" method="POST">
+    <div class="form-group">
+      <label><b>Codigo de producto:</b></label>
+      <input type="text" class="form-control" id="id" placeholder="Ingrese aquí el código del producto" name="id" style="width: 300px;">
+    </div>
+    <div class="form-group">
+      <label><b>Nombre del producto:</b></label>
+      <input type="text" class="form-control" id="nombre" placeholder="Ingrese aquí el nombre del producto" name="nombre" style="width: 300px;">
+    </div>
+    <div class="form-group">
+      <label><b>Marca:</b></label>
+      <input type="text" class="form-control" id="marca" placeholder="Ingrese aquí la marca del producto" name="marca" style="width: 300px;">
+    </div>
+    <div class="form-group">
+      <label><b>Precio:</b></label>
+      <input type="text" class="form-control" id="precio" placeholder="Ingrese aquí el precio del producto" name="precio" style="width: 300px;">
+    </div>
+    <div class="form-group">
+      <label><b>Cantidad comprada:</b></label>
+      <input type="text" class="form-control" id="cantidad" placeholder="Ingrese aquí la cantidad comprada" name="cantidad" style="width: 300px;">
+    </div>
+    <button type="submit" class="btn btn-info">Registrar producto</button>
+  </form>
+  <br>
+  <a class="btn btn-primary" href="index.html" role="button">Volver</a>
+</div>
+
+</body>
+</html>

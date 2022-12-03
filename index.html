@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Tienda Electronics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+
+      background-image: url("imagenes/Interfaz.PNG");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
+    }
+
+    header {
+      text-align-last: center; 
+      background-color: whitesmoke;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Tienda Electronics</h2>
+  </header>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Electronic SAS</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Utilidades
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="calculadora.html">Calculadora valor de venta</a>
+        <a class="dropdown-item" href="conversor.html">Conversor de unidades de almacenamiento</a>
+      </div>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Inventario
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="form_insertar.html">Registro</a>
+        <a class="dropdown-item" href="form_consultar.html">Consulta</a>
+        <a class="dropdown-item" href="form_actualizar.html">Actualización</a>
+        <a class="dropdown-item" href="form_eliminar.html">Eliminar</a>
+      </div>
+    </li>
+
+        <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Administrador
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="php/crear_bd.php">Crear Base de Datos</a>
+        <a class="dropdown-item" href="php/crear_tabla.php">Crear tabla en la Base de Datos</a>
+        <a class="dropdown-item" href="php/pdf.php">Generar Reporte PDF</a>
+        <a class="dropdown-item" href="php/backup.php">Generar backup</a>
+      </div>
+    </li>
+
+
+  </ul>
+</nav>
+
+</body>
+</html>

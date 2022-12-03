@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Tienda Electronics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+    <style>
+  
+      body {
+  
+  background-image: url("imagenes/Calculadora.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+  
+  header{
+    text-align-last:center; 
+    background-color: black;
+    padding: 20px;
+    color:#fff;
+  }
+  
+  h3 {
+    text-align:left;
+    font-weight: 500;
+    padding: 40px;
+  }
+  
+  form {
+    background: radial-gradient(circle at 50% -20.71%, #ff97bd 0, #ff8ec2 10%, #ff85c7 20%, #fb7ccd 30%, #eb74d3 40%, #d86cd8 50%, #c166de 60%, #a663e4 70%, #8662e9 80%, #5c63ef 90%, #0065f3 100%);
+    padding: 40px;
+    border: radius 10px;
+    width: 30%;
+  }
+  
+  .btn-primary {
+    border: none;
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer; 
+  }
+  
+  .btn-danger {
+    border: none;
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer; 
+  }
+  
+  .center-content {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    </style>
+  </head>
+  
+  <body>
+  
+    <header>
+      <h2>Tienda Electronics</h2>
+    </header>
+      
+    <div class="container">
+    
+      <h3>Calculadora valor de venta</h3>
+  
+      <script>
+
+      function calcular() {
+  
+      var a = document.f1.a.value;
+      var b = document.f1.b.value;
+      var c = document.f1.c.value;
+      var r1 = document.f1.r1.value;
+      var r2 = document.f1.r2.value;
+      var r3 = document.f1.r3.value;
+      r1=parseFloat(a)*(parseFloat(b)/100);
+      document.f1.r1.value=r1;
+      r2=parseFloat(a)*(parseFloat(c)/100);
+      document.f1.r2.value=r2;
+      r3=parseFloat(a)+parseFloat(r1)+parseFloat(r2);
+      document.f1.r3.value=r3;
+
+      }
+       
+      </script>
+  
+      <form name="f1" action="" method="post">
+  
+        <div class="form-group">
+      
+          <label for="Valor de la compra" class="form-label"><b>Valor de compra</b></label>
+          <input type="number" class="form-control" id="a" placeholder="Ingrese el valor de compra" name="a">
+        
+        <br>
+    
+          <label for="Porcentaje de utilidad" class="form-label"><b>Porcentaje de utilidad</b></label>
+          <input type="number" class="form-control" id="b" placeholder="Ingrese el porcentaje de utilidad" name="b">
+    
+        <br>
+    
+          <label for="Porcentaje de impuestos" class="form-label"><b>Porcentaje de impuestos (IVA)</b></label>
+          <input type="number" class="form-control" id="c" placeholder="Ingrese el porcentaje de impuestos" name="c">
+    
+        <div class="container">    
+          <p class="center-content">
+  
+            <input type="button" name="" value="CALCULAR" onclick="calcular()" class="btn btn-primary">
+            <input type="button" name="" value="BORRAR" onclick="reset()" class="btn btn-danger">
+  
+          </p> 
+        
+          <label for="Valor de venta" class="form-label"><b>Valor de venta</b></label>
+          <input type="number" class="form-control" id="r1" placeholder="Valor de venta" name="r1">
+    
+        <br>
+    
+          <label for="Ganancia" class="form-label"><b>Ganancia</b></label>
+          <input type="number" class="form-control" id="r3" placeholder="Ganancia" name="r3">
+    
+        </div>
+            
+      </form>
+    </div>
+    <br>
+    <button onclick="window.history.back()"><b>Volver</b></button>
+  </body> 
+ 
+</html>
